@@ -1,4 +1,4 @@
-EXTRAMODULES='extramodules-6.1-MANJARO'
+EXTRAMODULES='extramodules-6.2-MANJARO'
 
 post_install() {
   depmod $(cat /usr/lib/modules/$EXTRAMODULES/version)
