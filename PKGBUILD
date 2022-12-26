@@ -1,12 +1,12 @@
 # Maintainer: Bernhard Landauer <bernhard@manjaro.org>
 # Maintainer: Philip Müller <philm[at]manjaro[dot]org>
 
-_linuxprefix=linux62
-_extramodules=extramodules-6.2-MANJARO
+_linuxprefix=linux61
+_extramodules=extramodules-6.1-MANJARO
 
 pkgname="$_linuxprefix-zfs"
 pkgver=2.1.7
-pkgrel=0.1
+pkgrel=2
 pkgdesc='Kernel modules for the Zettabyte File System.'
 arch=('x86_64')
 url="http://zfsonlinux.org/"
