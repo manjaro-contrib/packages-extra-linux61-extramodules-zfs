@@ -5,8 +5,8 @@ _linuxprefix=linux61
 _extramodules=extramodules-6.1-MANJARO
 
 pkgname="$_linuxprefix-zfs"
-pkgver=2.1.9
-pkgrel=15
+pkgver=2.1.10
+pkgrel=1
 pkgdesc='Kernel modules for the Zettabyte File System.'
 arch=('x86_64')
 url="http://zfsonlinux.org/"
@@ -16,11 +16,9 @@ depends=("$_linuxprefix" "kmod" "zfs-utils=${pkgver}")
 makedepends=("$_linuxprefix-headers")
 provides=("zfs=${pkgver}")
 install=zfs.install
-source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-${pkgver}/zfs-${pkgver}.tar.gz"{,.asc}
-        'https://github.com/andrewc12/openzfs/commit/68b1eba.patch')
-sha256sums=('6b172cdf2eb54e17fcd68f900fab33c1430c5c59848fa46fab83614922fe50f6'
-            'SKIP'
-            '2b6996a310893d63f79fa32f8be2bd54f0cbe2a17c993c32c461cd04d1e81ae8')
+source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-${pkgver}/zfs-${pkgver}.tar.gz"{,.asc})
+sha256sums=('f3abb83a1a4c0cd4f064f3c6a7cc133f800a76dd40b3fec1d15a31ad08471ab9'
+            'SKIP')
 validpgpkeys=('4F3BA9AB6D1F8D683DC2DFB56AD860EED4598027'  # Tony Hutter (GPG key for signing ZFS releases) <hutter2@llnl.gov>
               'C33DF142657ED1F7C328A2960AB9E991C6AF658B') # Brian Behlendorf <behlendorf1@llnl.gov>
 
