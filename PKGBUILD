@@ -5,8 +5,8 @@ _linuxprefix=linux61
 _extramodules=extramodules-6.1-MANJARO
 
 pkgname="$_linuxprefix-zfs"
-pkgver=2.1.10
-pkgrel=2
+pkgver=2.1.11
+pkgrel=1
 pkgdesc='Kernel modules for the Zettabyte File System.'
 arch=('x86_64')
 url="http://zfsonlinux.org/"
@@ -17,7 +17,7 @@ makedepends=("$_linuxprefix-headers")
 provides=("zfs=${pkgver}")
 install=zfs.install
 source=("https://github.com/zfsonlinux/zfs/releases/download/zfs-${pkgver}/zfs-${pkgver}.tar.gz"{,.asc})
-sha256sums=('f3abb83a1a4c0cd4f064f3c6a7cc133f800a76dd40b3fec1d15a31ad08471ab9'
+sha256sums=('a54fe4e854d0a207584f1799a80e165eae66bc30dc8e8c96a1f99ed9d4d8ceb2'
             'SKIP')
 validpgpkeys=('4F3BA9AB6D1F8D683DC2DFB56AD860EED4598027'  # Tony Hutter (GPG key for signing ZFS releases) <hutter2@llnl.gov>
               'C33DF142657ED1F7C328A2960AB9E991C6AF658B') # Brian Behlendorf <behlendorf1@llnl.gov>
