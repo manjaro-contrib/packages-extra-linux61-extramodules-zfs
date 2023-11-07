@@ -6,7 +6,7 @@ _extramodules=extramodules-6.1-MANJARO
 
 pkgname="$_linuxprefix-zfs"
 pkgver=2.2.0
-pkgrel=1
+pkgrel=2
 pkgdesc='Kernel modules for the Zettabyte File System.'
 arch=('x86_64')
 url="http://zfsonlinux.org/"
@@ -14,7 +14,7 @@ license=('CDDL')
 groups=("$_linuxprefix-extramodules")
 depends=("$_linuxprefix" "zfs-utils=${pkgver}")
 makedepends=("$_linuxprefix-headers" "zfs-dkms=${pkgver}")
-provides=("zfs=${pkgver}")
+provides=("zfs=${pkgver}" "ZFS-MODULE=${pkgver}")
 options=('!strip')
 
 build() {
