@@ -15,6 +15,7 @@ groups=("$_linuxprefix-extramodules")
 depends=("$_linuxprefix" "zfs-utils=${pkgver}")
 makedepends=("$_linuxprefix-headers" "zfs-dkms=${pkgver}")
 provides=("zfs=${pkgver}")
+options=('!strip')
 
 build() {
     _kernver="$(cat /usr/lib/modules/$_extramodules/version)"
